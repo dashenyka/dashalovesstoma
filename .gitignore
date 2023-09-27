@@ -1,5 +1,24 @@
-# Object file
-*.o
+print("Введите два числа")
 
-# Ada Library Information
-*.ali
+a=int(input())
+b=int(input())
+
+sum=a+b
+raz=a-b
+pro=a*b
+sredar=(a+b)/2
+
+if a<0:
+    a=a*-1
+if b<0:
+    b=b*-1
+if a>b:
+    mod=a-b
+if a<b:
+    mod=b-a
+
+print("Сумма:", sum)
+print("Разность:", raz)
+print("Произведение:", pro)
+print("Среднее арифметическое:", sredar)
+print("Разность максимального и минимального по модулю:", mod)
